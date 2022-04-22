@@ -6,7 +6,7 @@ interface CustomPlayerProps {
     getDuration: (duration: number) => void;
     getProgress: (progress: number) => void;
     isPlaying: boolean;
-    setPlaying: React.Dispatch<React.SetStateAction<boolean>>
+    setPlaying: (isPlaying: boolean) => void;
     start: number;
 }
 const CustomPlayer: React.FC<CustomPlayerProps> = (props) => {

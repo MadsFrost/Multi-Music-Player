@@ -6,7 +6,7 @@ interface AppContentProps {
 
 const AppContent: React.FC<AppContentProps> = ({ children }) => {
     return (
-        <div className="fixed w-full h-full z-10">
+        <div className="flex items-center justify-center fixed w-full h-full z-10">
             {children}
         </div>
     )

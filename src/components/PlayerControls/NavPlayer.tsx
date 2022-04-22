@@ -21,7 +21,9 @@ const NavPlayer: React.FC<NavPlayerProps> = (props) => {
                 styles={{
                     // Customize the root svg element
                     root: {
-                        width: '75px'
+                      width: '200px',
+                      position: 'relative',
+                      zIndex: 100
                     },
                     // Customize the path, i.e. the "completed progress"
                     path: {
@@ -52,12 +54,9 @@ const NavPlayer: React.FC<NavPlayerProps> = (props) => {
                     fontSize: '16px',
                     },
                     // Customize background - only used when the `background` prop is true
-                    background: {
-                    fill: 'transparent'
-                    }
                 }}
             >
-                <img className='w-[65px] rounded-full' src={image} alt=''/>
+                <img className='w-full h-full rounded-full object-cover' src={image} alt=''/>
             </CircularProgressbarWithChildren>
         </NavLink>
     )
